@@ -1,0 +1,6 @@
+requests
+async-timeout==3.0.1
+dnspython==1.16.0
+pandas
+PyNaCl==1.3.0
+discord.py[voice]
