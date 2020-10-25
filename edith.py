@@ -3,10 +3,16 @@ import random
 import requests
 import asyncio
 
+def decode(code):
+	f = ""
+	for s in code:
+		f += (chr)(ord(s) - 1)
+	return f
+
 def read_token():
 	with open("token.txt", "r") as f:
 		lines = f.readlines()
-		return lines[0].strip()
+		return decode(lines[0].strip())
 
 token = read_token()
 CODE = "No Code Given"
